@@ -1,0 +1,93 @@
+<mxfile host="65bd71144e">
+    <diagram id="4n1vWl9rmutB6p-SJHLe" name="Page-1">
+        <mxGraphModel dx="981" dy="1749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="18" value="" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fontSize=19;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;sketch=1;curveFitting=1;jiggle=2;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="-50" width="610" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;index.js&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;app&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;use&lt;/span&gt;(&lt;span style=&quot;color: #4fc1ff;&quot;&gt;routers&lt;/span&gt;);&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="280" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;b&gt;Index&lt;br&gt;&lt;/b&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;routers&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;use&lt;/span&gt;(&lt;span style=&quot;color: #9cdcfe;&quot;&gt;accueil&lt;/span&gt;);&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;routers&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;use&lt;/span&gt;(&lt;span style=&quot;color: #9cdcfe;&quot;&gt;visiteur&lt;/span&gt;);&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;routers&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;use&lt;/span&gt;(&lt;span style=&quot;color: #9cdcfe;&quot;&gt;admin&lt;/span&gt;);&lt;/div&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="240" width="240" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;b&gt;Accueil&lt;br&gt;&lt;/b&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;router&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;get&lt;/span&gt;(&lt;span style=&quot;color: #ce9178;&quot;&gt;'/'&lt;/span&gt;, (&lt;span style=&quot;color: #9cdcfe;&quot;&gt;req&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;res&lt;/span&gt;) &lt;span style=&quot;color: #569cd6;&quot;&gt;=&amp;gt;&lt;/span&gt; {&lt;/div&gt;&lt;div&gt;  &lt;span style=&quot;color: #9cdcfe;&quot;&gt;res&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;render&lt;/span&gt;(&lt;span style=&quot;color: #ce9178;&quot;&gt;'index'&lt;/span&gt;);&lt;/div&gt;&lt;div&gt;  });&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="40" width="280" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Index.ejs" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="1090" y="90" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="endArrow=classic;html=1;fontSize=20;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="840" y="120" as="sourcePoint"/>
+                        <mxPoint x="1000" y="120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="Requête /" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=20;" connectable="0" vertex="1" parent="9">
+                    <mxGeometry x="-1" relative="1" as="geometry">
+                        <mxPoint x="40" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="&lt;b&gt;Admin&lt;br&gt;&lt;/b&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;router&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;get&lt;/span&gt;(&lt;span style=&quot;color: #ce9178;&quot;&gt;'/admin'&lt;/span&gt;, &lt;span style=&quot;color: #4fc1ff;&quot;&gt;adminController&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;indexAdmin&lt;/span&gt;);&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="240" width="280" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;b style=&quot;font-size: 19px;&quot;&gt;Visiteur&lt;br&gt;&lt;/b&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; line-height: 19px; font-size: 14px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;router&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;get&lt;/span&gt;(&lt;span style=&quot;color: #ce9178;&quot;&gt;'/jardin'&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;visiteurController&lt;/span&gt;.&lt;span style=&quot;color: #9cdcfe;&quot;&gt;indexVisiteur&lt;/span&gt;);&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="440" width="280" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Requête /admin" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=20;" connectable="0" vertex="1" parent="1">
+                    <mxGeometry x="880" y="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Requête /jardin" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=20;" connectable="0" vertex="1" parent="1">
+                    <mxGeometry x="880" y="520" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;b&gt;Index&lt;br&gt;&lt;/b&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div&gt;  &lt;span style=&quot;color: #dcdcaa;&quot;&gt;indexAdmin&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; (&lt;span style=&quot;color: #9cdcfe;&quot;&gt;req&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;res&lt;/span&gt;) &lt;span style=&quot;color: #569cd6;&quot;&gt;=&amp;gt;&lt;/span&gt; {&lt;/div&gt;&lt;div&gt;    &lt;span style=&quot;color: #9cdcfe;&quot;&gt;res&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;render&lt;/span&gt;(&lt;span style=&quot;color: #ce9178;&quot;&gt;'./admin/index'&lt;/span&gt;);&lt;/div&gt;&lt;div&gt;  },&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="1080" y="240" width="280" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="ROUTER" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="-30" width="370" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Reponse" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fontSize=20;" connectable="0" vertex="1" parent="1">
+                    <mxGeometry x="980" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=classic;html=1;fontSize=15;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="12" target="17">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="990" y="370" as="sourcePoint"/>
+                        <mxPoint x="1040" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="&lt;b&gt;Visiteur&lt;br&gt;&lt;/b&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div&gt;  &lt;span style=&quot;color: #dcdcaa;&quot;&gt;indexVisiteur&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; (&lt;span style=&quot;color: #9cdcfe;&quot;&gt;req&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;res&lt;/span&gt;) &lt;span style=&quot;color: #569cd6;&quot;&gt;=&amp;gt;&lt;/span&gt; {               &lt;/div&gt;&lt;div&gt;    &lt;span style=&quot;color: #9cdcfe;&quot;&gt;res&lt;/span&gt;.&lt;span style=&quot;color: #dcdcaa;&quot;&gt;render&lt;/span&gt;(&lt;span style=&quot;color: #ce9178;&quot;&gt;'./visiteur/index'&lt;/span&gt;);&lt;/div&gt;&lt;div&gt;  },&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                    <mxGeometry x="1080" y="440" width="280" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="endArrow=classic;html=1;fontSize=15;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="13" target="22">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1110" y="410" as="sourcePoint"/>
+                        <mxPoint x="1160" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="" style="endArrow=classic;html=1;fontSize=15;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="490" y="360" as="sourcePoint"/>
+                        <mxPoint x="290" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="" style="endArrow=classic;html=1;fontSize=15;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="12">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="490" y="360" as="sourcePoint"/>
+                        <mxPoint x="540" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="" style="endArrow=classic;html=1;fontSize=15;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="13">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="490" y="360" as="sourcePoint"/>
+                        <mxPoint x="540" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

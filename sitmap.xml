@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /catalogsearch/
+Disallow: /search/
+Disallow: /customer/account/login/
+Disallow: /*?SID=
+Disallow: /*?price=
+Disallow: /*&price=
+
+Sitemap: https://www.example.com/sitemap_index.xml

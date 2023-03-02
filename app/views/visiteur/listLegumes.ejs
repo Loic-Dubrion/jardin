@@ -1,0 +1,15 @@
+<%- include("../partials/header") %>
+<%- include("../partials/navBar") %>
+
+<h1>index page consultation</h1>
+
+<p>Dessin du jardin avec zone clicable par carré</p>
+
+<ul>
+<% result.forEach( elem => { %>
+  <li>
+    <a href="/jardin/<%= elem.nom %>"> <%= elem.nom %> </a>
+  </li>
+<% }); %>
+</ul>
+<%- include("../partials/footer") %>
