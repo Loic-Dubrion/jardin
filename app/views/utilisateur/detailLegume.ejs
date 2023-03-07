@@ -1,0 +1,38 @@
+<%- include("../partials/header") %>
+<%- include("../partials/navBar") %>
+
+<h1>consultation légume</h1>
+
+<div>
+  <p>tableau fiche technique legume</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2"> <%= result.nom %> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Variété</td>
+        <td><%= result.variete %></td>
+      </tr>
+      <tr>
+        <td>Alliances possible</td>
+        <td>
+          <ul>
+          <% if (result.alliances) { %>
+            <% result.alliances.forEach( elem => { %>
+            <a href="/legumes/<%= elem %>"><li><%= elem %></li></a>
+            <% }); %>
+          <% } %>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Type</td>
+        <td><%= result.type %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -26,6 +26,8 @@ router.post('/admin/connexion', (req, res) => {                // Identification
 });
 
 router.get('/admin/gestionAdmin', adminAuth, adminController.gestionAdmin);
+router.post('/admin/ajoutLegume', adminController.postAjoutLegume);
+router.post('/admin/suppressionLegume', adminController.postSuppressionLegume);
 // router.post('/admin/search_student', adminAuth, adminController.searchStudentPost);
 // router.get('/admin/delete_student/:id', adminAuth, adminController.deleteStudent);
 

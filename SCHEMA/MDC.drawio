@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="8dPu3Mo1SAEwb_AqKJBA" name="Page-1">
-        <mxGraphModel dx="1169" dy="704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="785" dy="244" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -172,7 +172,7 @@
                         <mxRectangle width="140" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="120" value="APARTENIR" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=none;" parent="1" vertex="1">
+                <mxCell id="120" value="POSSEDER" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="140" y="320" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="121" value="" style="endArrow=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="120" target="83" edge="1">
@@ -187,7 +187,7 @@
                         <mxPoint x="180" y="360" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="123" value="0 , 1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                <mxCell id="123" value="1 , N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="130" y="270" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="124" value="1 , 1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -364,7 +364,7 @@
                 <mxCell id="182" value="1 , N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="629.25" y="584.5" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="183" value="APARTENIR" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=none;direction=west;horizontal=1;" parent="1" vertex="1">
+                <mxCell id="183" value="CONTENIR" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=none;direction=west;horizontal=1;" parent="1" vertex="1">
                     <mxGeometry x="300" y="285" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="184" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="183" edge="1">

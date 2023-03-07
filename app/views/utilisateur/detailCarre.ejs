@@ -1,0 +1,89 @@
+<%- include("../partials/header") %>
+<%- include("../partials/navBar") %>
+
+<h1>index page consultation</h1>
+
+<div>
+  <p>tableau fiche technique carre</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Carré potager n° <%= result.id %> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Disponible</td>
+        <td><%= result.disponible ? 'OUI' : 'NON' %></td>
+      </tr>
+      <tr>
+        <td>Composition</td>
+        <td>
+          <ul>
+          <% if (result.composition) { %>
+            <% result.composition.forEach( elem => { %>
+            <a href="/legumes/<%= elem %>"><li><%= elem %></li></a>
+            <% }); %>
+          <% } %>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Année</td>
+        <td><%= result.annee.getFullYear() %></td>
+      </tr>
+      <tr>
+        <td>Alliances</td>
+        <td>
+          <ul>
+          <% if (result.alliances) { %>
+            <% result.alliances.forEach( elem => { %>
+            <a href="/legumes/<%= elem %>"><li><%= elem %></li></a>
+            <% }); %>
+          <% } %>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Rotations prochaines</td>
+      </tr>
+      <tr>
+        <td>Commentaire</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <h2>Modifier la composition du carré</h2>
+  
+  <form action="ajoutLegCarre" method="post">
+    <label for="ajoutLegCarre">Ajout d'un légume</label>
+    <select name="ajoutLegCarre">
+      <option value="" disabled selected>Sélectionner le légume à ajouter</option>
+      <% legumes.forEach(elem => { %>
+        <option value="<%= elem.nom %>"><%= elem.nom %></option>
+      <% }); %>
+      <input type="hidden" name="idCarre" value="<%= result.id %>">
+    </select>
+
+    <input type="submit" value="Ajouter un légume">
+  </form>
+
+  <form action="supLegCarre" method="post">
+    <label for="supLegCarre">Supprimer un légume</label>
+    <select name="supLegCarre">
+      <option value="" disabled selected>Sélectionner le légume à supprimer</option>
+      <% legumes.forEach(elem => { %>
+        <option value="<%= elem.nom %>"><%= elem.nom %></option>
+      <% }); %>
+      <input type="hidden" name="idCarre" value="<%= result.id %>">
+    </select>
+
+    <input type="submit" value="Supprimer un légume">
+  </form>
+
+</div>
+
+<%- include("../partials/footer") %>

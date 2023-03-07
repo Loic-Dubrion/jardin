@@ -7,7 +7,7 @@ const express = require('express');
 const routers = express.Router();
 
 const accueil = require('./accueil');
-const visiteur = require('./visiteur');
+const utilisateur = require('./utilisateur');
 const admin = require('./admin');
 
 
@@ -16,7 +16,7 @@ const admin = require('./admin');
 =========================================== */
 
 routers.use(accueil);
-routers.use(visiteur);
+routers.use(utilisateur);
 routers.use(admin);
 
 

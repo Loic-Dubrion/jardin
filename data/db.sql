@@ -86,9 +86,6 @@ VALUES
   (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
   (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
   (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
   (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', '');
 
 INSERT INTO composition_legumes (carre_id, legume_nom)
