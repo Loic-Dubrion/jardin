@@ -25,9 +25,17 @@ const controllers =
 
   detailCarre: async (req, res) => {
     try {
-      id = req.params.id;
+      id = Number(req.params.id);
       const detail = await dataMapper.detailCarre(id);
       console.log(detail.rows);
+      let alliances = [];
+      for (let i = 0; i < detail.rows.length; i++) {
+        alliances.push(detail.rows[i].alliances);
+      }
+      alliances = alliances.flat().filter(function(value, index, self) {
+        return self.indexOf(value) === index;
+      });
+      console.log(alliances);
       const legumes = await dataMapper.listLegumes();
       res.render('./utilisateur/detailCarre', {result: detail.rows[0], legumes: legumes.rows});
     } catch (err) {

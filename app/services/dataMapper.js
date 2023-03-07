@@ -28,13 +28,10 @@ const dataMapper =
     },
     
     detailCarre : (id) => {
-      const promiseData = client.query(`SELECT *, alliances                         -- sélectionner toutes les colonnes de la table "carres" et la colonne "alliances"
-                                        FROM carres                                 -- à partir de la table "carres"
-                                        JOIN UNNEST(carres.composition) legume_nom  -- joindre la colonne "composition" de la table "carres" en utilisant la fonction "UNNEST" pour déplier les tableaux de légumes
-                                        ON true                                     -- joindre toutes les combinaisons possibles de légumes et d'alliances pour le carré
-                                        JOIN legumes                                -- joindre la table "legumes" pour obtenir les alliances correspondantes pour chaque légume
-                                        ON legume_nom = legumes.nom                 -- en utilisant la correspondance des noms de légumes
-                                        WHERE carres.id = $1`, [id]);               
+      const promiseData = client.query(`SELECT c.*, l.alliances
+                                        FROM carres c
+                                        JOIN legumes l ON l.nom = ANY(c.composition)
+                                        WHERE c.id = $1;`, [id]);               
       return promiseData;
     },
 
