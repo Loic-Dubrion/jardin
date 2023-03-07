@@ -41,10 +41,12 @@ const controllers =
     const variete = req.body.variete;
     const famille = req.body.famille;
     const alliances = [];
-      if (typeof(req.body.alliances) === 'string') {
-        alliances.push(req.body.alliances);
-      } else {
-        alliances = req.body.alliances;
+      if (req.body.alliances) {
+        if (typeof(req.body.alliances) === 'string') {
+          alliances.push(req.body.alliances);
+        } else {
+          alliances = req.body.alliances;
+        }
       }
     try {
       const result = await dataMapper.ajoutLegume(nom, variete, famille, alliances);
