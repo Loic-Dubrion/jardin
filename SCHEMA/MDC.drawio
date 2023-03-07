@@ -10,7 +10,7 @@
                 <mxCell id="68" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;sketch=1;curveFitting=1;jiggle=2;" parent="67" vertex="1">
                     <mxGeometry y="30" width="380" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="70" value="&lt;u&gt;carre_id&lt;/u&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#6a00ff;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontColor=#ffffff;strokeColor=#3700CC;sketch=1;curveFitting=1;jiggle=2;" parent="68" vertex="1">
+                <mxCell id="70" value="&lt;u&gt;id&lt;/u&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#6a00ff;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontColor=#ffffff;strokeColor=#3700CC;sketch=1;curveFitting=1;jiggle=2;" parent="68" vertex="1">
                     <mxGeometry width="77" height="40" as="geometry">
                         <mxRectangle width="77" height="40" as="alternateBounds"/>
                     </mxGeometry>
@@ -149,7 +149,7 @@
                         <mxRectangle width="164" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="118" value="FK&amp;nbsp;&lt;span style=&quot;color: rgb(255, 255, 255); font-family: &amp;quot;Söhne Mono&amp;quot;, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Ubuntu Mono&amp;quot;, monospace; font-size: 14px;&quot;&gt;carres(id_carre)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#6a00ff;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontColor=#ffffff;strokeColor=#3700CC;sketch=1;curveFitting=1;jiggle=2;" parent="114" vertex="1">
+                <mxCell id="118" value="FK&amp;nbsp;&lt;span style=&quot;color: rgb(255, 255, 255); font-family: &amp;quot;Söhne Mono&amp;quot;, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Ubuntu Mono&amp;quot;, monospace; font-size: 14px;&quot;&gt;carres(id)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#6a00ff;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontColor=#ffffff;strokeColor=#3700CC;sketch=1;curveFitting=1;jiggle=2;" parent="114" vertex="1">
                     <mxGeometry x="240" width="140" height="30" as="geometry">
                         <mxRectangle width="140" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -386,60 +386,60 @@
                     <mxGeometry x="320" y="250" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="190" value="Table 'composition_legumes'" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;sketch=1;curveFitting=1;jiggle=2;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="442.75" y="75" width="376.5" height="130" as="geometry"/>
+                    <mxGeometry x="442.75" y="75" width="377.25" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="191" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;sketch=1;curveFitting=1;jiggle=2;" parent="190" vertex="1">
-                    <mxGeometry y="30" width="376.5" height="40" as="geometry"/>
+                    <mxGeometry y="30" width="377.25" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="192" value="&lt;u&gt;id&lt;/u&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;sketch=1;curveFitting=1;jiggle=2;" parent="191" vertex="1">
-                    <mxGeometry width="89" height="40" as="geometry">
-                        <mxRectangle width="89" height="40" as="alternateBounds"/>
+                    <mxGeometry width="87" height="40" as="geometry">
+                        <mxRectangle width="87" height="40" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="193" value="&lt;div style=&quot;color: rgb(212, 212, 212); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;SERIAL&lt;/span&gt; &lt;span style=&quot;color: #569cd6;&quot;&gt;PRIMARY KEY&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" parent="191" vertex="1">
-                    <mxGeometry x="89" width="167" height="40" as="geometry">
-                        <mxRectangle width="167" height="40" as="alternateBounds"/>
+                    <mxGeometry x="87" width="150" height="40" as="geometry">
+                        <mxRectangle width="150" height="40" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="194" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;sketch=1;curveFitting=1;jiggle=2;" parent="191" vertex="1">
-                    <mxGeometry x="256" width="121" height="40" as="geometry">
-                        <mxRectangle width="121" height="40" as="alternateBounds"/>
+                    <mxGeometry x="237" width="140" height="40" as="geometry">
+                        <mxRectangle width="140" height="40" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="195" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;sketch=1;curveFitting=1;jiggle=2;" parent="190" vertex="1">
-                    <mxGeometry y="70" width="376.5" height="30" as="geometry"/>
+                    <mxGeometry y="70" width="377.25" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="196" value="carre_id" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontColor=#ffffff;strokeColor=#001DBC;sketch=1;curveFitting=1;jiggle=2;" parent="195" vertex="1">
-                    <mxGeometry width="89" height="30" as="geometry">
-                        <mxRectangle width="89" height="30" as="alternateBounds"/>
+                    <mxGeometry width="87" height="30" as="geometry">
+                        <mxRectangle width="87" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="197" value="&lt;div style=&quot;font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;font color=&quot;#569cd6&quot;&gt;INTEGER&lt;/font&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" parent="195" vertex="1">
-                    <mxGeometry x="89" width="167" height="30" as="geometry">
-                        <mxRectangle width="167" height="30" as="alternateBounds"/>
+                    <mxGeometry x="87" width="150" height="30" as="geometry">
+                        <mxRectangle width="150" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="198" value="&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;FK&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-family: &amp;quot;Söhne Mono&amp;quot;, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Ubuntu Mono&amp;quot;, monospace; font-size: 14px;&quot;&gt;carre(id)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#0050ef;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontColor=#ffffff;strokeColor=#001DBC;sketch=1;curveFitting=1;jiggle=2;" parent="195" vertex="1">
-                    <mxGeometry x="256" width="121" height="30" as="geometry">
-                        <mxRectangle width="121" height="30" as="alternateBounds"/>
+                    <mxGeometry x="237" width="140" height="30" as="geometry">
+                        <mxRectangle width="140" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="199" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;sketch=1;curveFitting=1;jiggle=2;" parent="190" vertex="1">
-                    <mxGeometry y="100" width="376.5" height="30" as="geometry"/>
+                    <mxGeometry y="100" width="377.25" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="200" value="legumes_nom" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;sketch=1;curveFitting=1;jiggle=2;" parent="199" vertex="1">
-                    <mxGeometry width="89" height="30" as="geometry">
-                        <mxRectangle width="89" height="30" as="alternateBounds"/>
+                    <mxGeometry width="87" height="30" as="geometry">
+                        <mxRectangle width="87" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="201" value="&lt;div style=&quot;color: rgb(212, 212, 212); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;VARCHAR&lt;/span&gt;(&lt;span style=&quot;color: #b5cea8;&quot;&gt;100&lt;/span&gt;)&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;sketch=1;curveFitting=1;jiggle=2;labelBackgroundColor=none;" parent="199" vertex="1">
-                    <mxGeometry x="89" width="167" height="30" as="geometry">
-                        <mxRectangle width="167" height="30" as="alternateBounds"/>
+                    <mxGeometry x="87" width="150" height="30" as="geometry">
+                        <mxRectangle width="150" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="202" value="&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;FK&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 255, 255); font-family: &amp;quot;Söhne Mono&amp;quot;, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Ubuntu Mono&amp;quot;, monospace; font-size: 14px;&quot;&gt;legumes(nom)&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=#0050ef;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;fontColor=#ffffff;strokeColor=#001DBC;sketch=1;curveFitting=1;jiggle=2;" parent="199" vertex="1">
-                    <mxGeometry x="256" width="121" height="30" as="geometry">
-                        <mxRectangle width="121" height="30" as="alternateBounds"/>
+                    <mxGeometry x="237" width="140" height="30" as="geometry">
+                        <mxRectangle width="140" height="30" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="233" value="TABLE DE LIASON" style="text;html=1;strokeColor=#6F0000;fillColor=#a20025;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#ffffff;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
