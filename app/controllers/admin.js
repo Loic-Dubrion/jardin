@@ -36,12 +36,12 @@ const controllers =
   },
 
   postAjoutLegume: async (req, res) => {
-    let nom = req.body.nom.toLowerCase();
-    nom = nom.charAt(0).toUpperCase() + nom.slice(1);
-    const variete = req.body.variete;
+    let nom = req.body.nom.toLowerCase();               
+    nom = nom.charAt(0).toUpperCase() + nom.slice(1);     // Convertis le string en "String"
+    const variete = req.body.variete;                     // Récupère les infos du form
     const famille = req.body.famille;
-    const alliances = [];
-      if (req.body.alliances) {
+    const alliances = [];                                 // Création d'un array alliances
+      if (req.body.alliances) {                           // Ajout des valeurs saisis dans le tableau
         if (typeof(req.body.alliances) === 'string') {
           alliances.push(req.body.alliances);
         } else {
@@ -55,6 +55,10 @@ const controllers =
       console.error(err);
       res.status(500).render('errors/500')
     }
+  },
+
+  postModifLegume: async (req, res) => {
+    res.send('Controller et dataMapper à créer !')
   },
 
   postSuppressionLegume: async (req, res) => {

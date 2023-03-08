@@ -3,6 +3,7 @@
 
 <h1>Page gestion admin</h1>
 
+<div>
 <h2> Ajout d'un légume</h2>
   <form action="ajoutLegume" method="post">
     <label for="nom">Nom du légume *</label>
@@ -27,10 +28,44 @@
       <% }); %>
     </select>
 
-
     <input type="submit" value="Ajouter le légume">
   </form>
+</div>
 
+<div>
+<h2> Modifier un légume</h2>
+  <form action="modifLegume" method="post">
+    <select name="modifLegume">
+      <option value="" disabled selected>Sélectionner le légume à modifier</option>
+      <% legumes.forEach(elem => { %>
+        <option value="<%= elem.nom %>"><%= elem.nom %></option>
+      <% }); %>
+    </select>
+
+    <label for="variete">Variété</label>
+    <input type="text" id="variete" name="variete">
+
+    <label for="famille">Famille *</label>
+    <select id="famille" name="famille" required>
+      <option value="">-- Sélectionnez une famille --</option>
+      <% familles.forEach(elem => { %>
+        <option value="<%= elem.type %>"><%= elem.type %></option>
+      <% }); %>
+    </select>
+
+    <label for="alliances">Alliances</label>
+    <select name="alliances" id="alliances" multiple>
+      <option value="" disabled selected>Ajouter un légume ami</option>
+      <% legumes.forEach(elem => { %>
+        <option value="<%= elem.nom %>"><%= elem.nom %></option>
+      <% }); %>
+    </select>
+
+    <input type="submit" value="Modifier le légume">
+  </form>
+</div>
+
+<div>
 <h2> Suppression d'un légume</h2>
   <form action="suppressionLegume" method="post">
     <label for="suppressionLegume">Suppression d'un légume</label>
@@ -43,6 +78,6 @@
 
     <input type="submit" value="Supprimer le légume">
   </form>
-
+</div>
 
 <%- include("../partials/footer") %>

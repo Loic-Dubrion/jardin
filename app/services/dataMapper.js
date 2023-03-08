@@ -28,10 +28,16 @@ const dataMapper =
     },
     
     detailCarre : (id) => {
-      const promiseData = client.query(`SELECT c.*, l.alliances
-                                        FROM carres c
-                                        JOIN legumes l ON l.nom = ANY(c.composition)
-                                        WHERE c.id = $1;`, [id]);               
+      const promiseData = client.query(`SELECT c.*, l.alliances           -- récupère les colonnes "c.*" de la table "carres" 
+                                        FROM carres c                     -- ainsi que la colonne "l.alliances" de la table "legumes"
+                                        JOIN legumes l                    -- jointure entre les tables "carres" et "legumes" 
+                                        ON l.nom = ANY(c.composition)     -- sur la condition "l.nom = ANY(c.composition)" où "composition" est un tableau dans la table "carres"
+                                        WHERE c.id = $1;`, [id]);        
+      return promiseData;
+    },
+
+    detailCarreVide : (id) => {
+      const promiseData = client.query(`SELECT * FROM carres WHERE id = $1`, [id]);
       return promiseData;
     },
 
@@ -64,6 +70,10 @@ const dataMapper =
                     SET composition = (SELECT ARRAY_AGG(legume_nom) FROM composition_legumes WHERE carre_id = $1) 
                     WHERE id = $1`, [idCarre]);
     },
+
+    toggleDispo : (idCarre) => {
+      client.query(`UPDATE carres SET disponible = NOT disponible WHERE id = $1`,[idCarre])
+    }
 
   }
 

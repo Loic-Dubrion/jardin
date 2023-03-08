@@ -37,8 +37,8 @@
         <td>Alliances</td>
         <td>
           <ul>
-          <% if (result.alliances) { %>
-            <% result.alliances.forEach( elem => { %>
+          <% if (alliances) { %>
+            <% alliances.forEach( elem => { %>
             <a href="/legumes/<%= elem %>"><li><%= elem %></li></a>
             <% }); %>
           <% } %>
@@ -57,6 +57,12 @@
 
 <div>
   <h2>Modifier la composition du carré</h2>
+
+  <form action="toggle" method="POST">
+    <label for="toggleDispo">Place disponible</label>
+    <input type="hidden" name="idCarre" value="<%= result.id %>">
+    <button type="submit">OUI / NON</button>
+  </form>
   
   <form action="ajoutLegCarre" method="post">
     <label for="ajoutLegCarre">Ajout d'un légume</label>
@@ -66,6 +72,7 @@
         <option value="<%= elem.nom %>"><%= elem.nom %></option>
       <% }); %>
       <input type="hidden" name="idCarre" value="<%= result.id %>">
+      <input type="hidden" name="compositionCarre" value="<%= result.composition %>">
     </select>
 
     <input type="submit" value="Ajouter un légume">
