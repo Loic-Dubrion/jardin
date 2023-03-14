@@ -16,6 +16,7 @@ const sequelize = new Sequelize(process.env.PG_URL, {
     updatedAt: "updated_at",
     underscored: true,          // Passe les noms de champs de camelCase à snake_case
   },
+  logging: false,               // Désactive les console.log automatique
 });
 
 // Test de la connexion à la base de données

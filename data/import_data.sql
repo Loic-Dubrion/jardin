@@ -7,35 +7,43 @@ INSERT INTO "category" ("name", "description") VALUES
 ('Graines', 'fèves, haricots, pois ou engrais vert'),
 ('Fruits', 'tomate, courgette, aubergine, potiron, concombre, cornichon…');
 
-INSERT INTO "vegetable" ("name", "variety", "category_id", "description") VALUES
-('Bettrave', '' , 2, ''),
-('Poireaux', '' , 3, 'Planter près des épinards, navets, carottes'),
-('Courgette', '' , 5, ''),
-('Radis', '' , 2, ''),
-('Haricots vert', '' , 4, 'A l''ombre des rames planter des salades'),
-('Tomate', '' , 5, ''),
-('Salade', '' , 1, ''),
-('Pomme de terre', '' , 2, '');
+INSERT INTO "vegetable" ("id","name", "variety", "category_id", "description") VALUES
+(1, 'Bettrave', '' , 2, ''),
+(2, 'Poireaux', '' , 3, 'Planter près des épinards, navets, carottes'),
+(3, 'Courgette', '' , 5, ''),
+(4, 'Radis', '' , 2, ''),
+(5, 'Haricots vert', '' , 4, 'A l''ombre des rames planter des salades'),
+(6, 'Tomate', '' , 5, ''),
+(7, 'Salade', '' , 1, ''),
+(8, 'Pomme de terre', '' , 2, '');
 
-INSERT INTO "square" ("available", "composition", "year", "comment")
+INSERT INTO "square" ("id","available", "year", "comment")
 VALUES 
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', ''),
-  (True, ARRAY[]::VARCHAR(100)[], '2023-01-01', '');
+  (1, True, '2023-01-01', ''),
+  (2, True, '2023-01-01', ''),
+  (3, True, '2023-01-01', ''),
+  (4, True, '2023-01-01', ''),
+  (5, True, '2023-01-01', ''),
+  (6, True, '2023-01-01', ''),
+  (7, True, '2023-01-01', ''),
+  (8, True, '2023-01-01', ''),
+  (9, True, '2023-01-01', ''),
+  (10, True, '2023-01-01', ''),
+  (11, True, '2023-01-01', ''),
+  (12, True, '2023-01-01', ''),
+  (13, True, '2023-01-01', ''),
+  (14, True, '2023-01-01', ''),
+  (15, True, '2023-01-01', ''),
+  (16, True, '2023-01-01', ''),
+  (17, True, '2023-01-01', '');
+
+INSERT INTO "vegetable_has_square" ("square_id", "vegetable_id")
+VALUES 
+(1, 2),
+(1, 3),
+(1, 4),
+(2, 5),
+(2, 6);
 
 -- On rajoute les clés étrangères
 ALTER TABLE "vegetable" 
